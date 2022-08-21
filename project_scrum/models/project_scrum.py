@@ -378,7 +378,7 @@ class project_task(models.Model):
     us_id = fields.Many2one(comodel_name='project.scrum.us', string='User Story')
     us_ids = fields.Many2many(comodel_name='project.scrum.us', string='User Stories')
     date_start = fields.Date(string='Starting Date', required=False, default=date.today())
-    date_end = fields.Date(string='Ending Date', required=False)
+    date_end = fields.Datetime(string='Ending Date', required=False)
     use_scrum = fields.Boolean(related='project_id.use_scrum')
     description = fields.Html('Description')
     sprint_id = fields.Many2one(comodel_name='project.scrum.sprint', string='Sprint',
