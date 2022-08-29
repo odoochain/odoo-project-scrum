@@ -33,7 +33,7 @@
     'license': 'AGPL-3',
     'contributor': '',
     'maintainer': 'Vertel AB',
-    'repository': 'https://github.com/vertelab/odoo-project-scrum',
+    'repository': 'https://github.com/odoochain/',
     'depends': ['project', 'mail'],
     'data': [
         'views/project_messagemenu_data.xml',
