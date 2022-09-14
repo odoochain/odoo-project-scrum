@@ -30,10 +30,7 @@
     'summary': 'Using Scrum to plan the work in teams',
     'category': 'Productivity',
     #'sequence': '1',
-    'author': 'Vertel AB',
-    'website': 'https://vertel.se/apps/odoo-project_scrum/project_scrum',
     'images': ['static/description/banner.png'], # 560x280 px.
-    'license': 'AGPL-3',
     'contributor': '',
     'maintainer': 'Vertel AB',
     'repository': 'https://github.com/vertelab/odoo-project-scrum',
@@ -99,7 +96,7 @@ More information:
     'author': 'Vertel AB',
     'license': 'AGPL-3',
     'website': 'https://vertel.se',
-    'depends': ['project', 'mail', 'hr_timesheet', 'project_category', 'sales_team'],
+    'depends': ['project', 'mail', 'hr_timesheet', 'sales_team'],
     'data': [
         'views/project_scrum_view.xml',
         'wizard/project_scrum_test_task_view.xml',
