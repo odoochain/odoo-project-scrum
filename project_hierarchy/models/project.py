@@ -40,16 +40,18 @@ class Project(models.Model):
             record.portfolio_id = portfolio_id
 
     # BUG: portfolio_id wont update when we change parent_id on parent_id.
-    portfolio_id = fields.Many2one(string="Portfolio", comodel_name='project.project', compute=_compute_portfolio_id, store=True, readonly=True)
+    portfolio_id = fields.Many2one(string="Portfolio", comodel_name='project.project',
+                                   compute=_compute_portfolio_id, store=True, readonly=True)
 
-    planned_hours = fields.Float(string='Planned Hours', help="It is the time planned to achieve the project. If this "
-                                                              "document has sub-project, it means the time needed to "
-                                                              "achieve this project and its childs.", tracking=True)
+    # planned_hours = fields.Float(string='Planned Hours', help="It is the time planned to achieve the project. If this "
+    #                                                           "document has sub-project, it means the time needed to "
+    #                                                           "achieve this project and its childs.", tracking=True)
 
     def _compute_planned_task_hours(self):
         self.planned_task_hours = 164.0
 
-    planned_task_hours = fields.Float(string="Planned Task Hours", compute=_compute_planned_task_hours, store=True, help="It is the time planned to achieve the all tasks project. If this document has sub-project, it means the time needed to achieve this project and its childs.")
+    planned_task_hours = fields.Float(string="Planned Task Hours", compute=_compute_planned_task_hours, store=True,
+                                      help="It is the time planned to achieve the all tasks project. If this document has sub-project, it means the time needed to achieve this project and its childs.")
 
 
 class ProjectTask(models.Model):

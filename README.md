@@ -7,7 +7,11 @@ You can do that by the following command: sudo apt-get install python-bs4
 
 The project_scrum module depends on an OCA module (https://github.com/OCA/project/tree/14.0/project_category). This will replace the project category model. The user can create a Task from Sprint by clicking on the Action in the formview. This task is intended to be used as test-case.
 
-将 scrum 功能（如用户故事、sprint、scrum 角色等）添加到默认的 Odoo 项目管理模块（它自然也依赖于它）。为了运行“project_scrum”，您需要在系统上安装 pyhton 库“Beautiful Soup”（python-bs4）。您可以通过以下命令执行此操作： sudo apt-get install python-bs4 project_scrum 模块依赖于 OCA 模块 (https:github.comOCAprojecttree14.0project_category)。
+将 scrum 功能（如用户故事、sprint、scrum 角色等）添加到默认的 Odoo 项目管理模块（它自然也依赖于它）。
+
+为了运行“project_scrum”，您需要在系统上安装 pyhton 库“Beautiful Soup”（python-bs4）。您可以通过以下命令执行此操作： sudo apt-get install python-bs4 
+
+project_scrum 模块依赖于 OCA 模块 (https:github.comOCAprojecttree14.0project_category)。
 
 这将取代项目类别模型。用户可以通过单击表单视图中的操作从 Sprint 创建任务。此任务旨在用作测试用例。
 

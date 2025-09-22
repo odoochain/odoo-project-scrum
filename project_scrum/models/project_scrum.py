@@ -181,17 +181,17 @@ class scrum_sprint(models.Model):
 
     def test_task(self):
         # tags = self.env['project.category'].search([('name', '=', 'test')])  # search tags with name "test"
-        tags = self.env['project.type'].search([('name', '=', 'test')])  # search tags with name "test"
+        tags = self.env['project.task.type'].search([('name', '=', 'test')])  # search tags with name "test"
         if len(tags) == 0:  # if not exist, then creat a "test" tag into category
             # tags.append(self.env['project.category'].create({'name': 'test'}))
-            tags = self.env['project.type'].create({'name': 'test'})
+            tags = self.env['project.task.type'].create({'name': 'test'})
         for tc in self.project_id.test_case_ids:  # loop through each test cases to creat task
             self.env['project.task'].create({
                 'name': '[TC] %s' % tc.name,
                 'description': tc.description_test,
                 'project_id': tc.project_id.id,
                 'sprint_id': self.id,
-                'type_id': [(6, _, tags)],
+                # 'type_id': [(6, _, tags)],
             })
 
 

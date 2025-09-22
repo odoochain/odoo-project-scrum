@@ -1,7 +1,7 @@
 # Copyright <2017> <Tenovar Ltd>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 {
-    "name": "Project Scrum 14",
+    "name": "Project Scrum OCA",
     "summary": "Use Scrum Method to manage your project",
     "version": "14.0.1.0.0",
     "category": "Project Management",
@@ -32,7 +32,7 @@
         "security/res_groups.xml",
     ],
     "demo": ["demo/project_scrum_demo.xml"],
-    "installable": True,
+    "installable": False,
     "license": "AGPL-3",
-    "application": True,
+    "application": False,
 }

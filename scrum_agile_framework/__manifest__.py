@@ -34,7 +34,7 @@
         'web_tour',
         'digest',
     ],
-
+    'license': 'AGPL-3',
     # always loaded
     'data': [
         'security/scrum_security.xml',
@@ -47,5 +47,6 @@
         'demo/demo.xml',
     ],
     # Indicamos que es una aplicacion
-    'application': True,
+    'application': False,
+    'installable': False,
 }
